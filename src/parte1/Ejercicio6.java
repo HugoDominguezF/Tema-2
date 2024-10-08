@@ -25,7 +25,7 @@ public class Ejercicio6 {
 		c = sc.nextDouble();
 		
 		raizCuadrada = b*b-4*a*c;
-		if(raizCuadrada >= 0) {
+		if(raizCuadrada >= 0){
 			
 			x = (-b+raizCuadrada/raizCuadrada)/(2*a);
 			x2 = (-b-raizCuadrada/raizCuadrada)/(2*a);
@@ -38,6 +38,8 @@ public class Ejercicio6 {
 		}else {
 			System.out.println("No existe una respuesta con los valores dados");
 		}
+		
+		sc.close();
 		
 	}
 
