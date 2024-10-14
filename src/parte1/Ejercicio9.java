@@ -6,24 +6,35 @@ public class Ejercicio9 {
 
 	public static void main(String[] args) {
 		
-		double nota;
+		String jugador1;
+		String jugador2;
+		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Jugador uno elija piedra,papel o tijeras");
-		nota= sc.nextDouble();
+		jugador1= sc.next();
+		System.out.println("Jugador uno elija piedra,papel o tijeras");
+		jugador2= sc.next();
 		
-		if (nota>=0 && nota<5) {
-			System.out.println("Suspenso");
-		}else if (nota>=5 && nota<6) {
-			System.out.println("Suficiente");
-		}else if (nota>=6 && nota<7) {
-			System.out.println("Bien");
-		}else if (nota>=7 && nota<9) {
-			System.out.println("Notable");
-		}else if (nota>=9 && nota<= 10) {
-			System.out.println("Sobresaliente");
-		}else
-			System.out.println("El numero no esta entre el 0 y 10");
+		if(jugador1.equalsIgnoreCase("piedra") && jugador2.equalsIgnoreCase("piedra")) {
+			System.out.println("empate");
+		}else if (jugador1.equalsIgnoreCase("papel") && jugador2.equalsIgnoreCase("papel")) {
+			System.out.println("empate");
+		}else if(jugador1.equalsIgnoreCase("tijeras") && jugador2.equalsIgnoreCase("tijeras")) {
+			System.out.println("empate");
+		}else if(jugador1.equalsIgnoreCase("piedra") && jugador2.equalsIgnoreCase("tijeras")) {
+			System.out.println("Gana jugador 1");
+		}else if(jugador1.equalsIgnoreCase("tijeras") && jugador2.equalsIgnoreCase("papel")) {
+			System.out.println("Gana jugador 1");
+		}else if(jugador1.equalsIgnoreCase("papel") && jugador2.equalsIgnoreCase("piedra")) {
+			System.out.println("Gana jugador 1");
+		}else if(jugador1.equalsIgnoreCase("papel") && jugador2.equalsIgnoreCase("tijeras")) {
+			System.out.println("Gana jugador 2");
+		}else if(jugador1.equalsIgnoreCase("piedra") && jugador2.equalsIgnoreCase("papel")) {
+			System.out.println("Gana jugador 2");
+		}else if(jugador1.equalsIgnoreCase("tijeras") && jugador2.equalsIgnoreCase("piedra")) {
+			System.out.println("Gana jugador 2");
+		}
 		
 		
 	}
