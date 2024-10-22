@@ -6,12 +6,22 @@ public class Ejercicio7 {
 
 	public static void main(String[] args) {
 
+		/*
+		 * declaramos las variables de los dos numero que queremos operar y la letra de
+		 * las opciones que el usuario eligira para cada operacion y abrimos el scanner
+		 */
 		double numero;
 		double numero2;
 		String letra;
 
 		Scanner sc = new Scanner(System.in);
 
+		/*
+		 * repetimos el ejercicio de la calculadora con la unica excepcion de que
+		 * metemos todo en un do-while para seguir calculando si el usuario lo desea,
+		 * pero añadimos una nueva opcion que se llama salir la cual termina todo el
+		 * do-while y termina el codigo saliendo del bucle
+		 */
 		do {
 			System.out.println("Elija dos numeros");
 			System.out.println("Numero 1:");
@@ -39,6 +49,8 @@ public class Ejercicio7 {
 			}
 			System.out.println("");
 		} while (!letra.equalsIgnoreCase("e"));
+		
+		//cerramos el scanner
 		sc.close();
 	}
 

@@ -6,12 +6,23 @@ public class Ejercicio6 {
 
 	public static void main(String[] args) {
 
+		/*
+		 * Creamos las variables jugador 1 y 2 para almacenar las respuestas de ambas
+		 * personas, tambien el String de seguir para saber si los jugadores quieren
+		 * continuar la partida, abrimos el scanner para leer al usuario
+		 */
 		String jugador1;
 		String jugador2;
 		String seguir;
 
 		Scanner sc = new Scanner(System.in);
 
+		/*
+		 * realizamos el ejercicio de piedra papel o tijeras de los ejercicios del
+		 * switch, pero metemos todo en un do-while para preguntar al final si los
+		 * jugadores quieren seguir jugando, en caso afirmativo se repetira todo el
+		 * codigo
+		 */
 		do {
 
 			do {
@@ -50,6 +61,7 @@ public class Ejercicio6 {
 			seguir = sc.next();
 		} while (seguir.equalsIgnoreCase("S"));
 
+		//cerramos el scanner
 		sc.close();
 	}
 
