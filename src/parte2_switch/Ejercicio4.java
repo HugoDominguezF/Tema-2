@@ -8,7 +8,8 @@ public class Ejercicio4 {
 
 		double numero;
 		double numero2;
-		String letra;
+		String tirada1;
+		String tirada2;
 
 		Scanner sc = new Scanner(System.in);
 
@@ -23,9 +24,9 @@ public class Ejercicio4 {
 		System.out.println("B) Restar los numeros");
 		System.out.println("C) Multiplicar los numeros");
 		System.out.println("D) Dividir los numeros");
-		letra = sc.next().toUpperCase();
+		tirada2 = sc.next().toUpperCase();
 
-		switch (letra) {
+		switch (tirada2) {
 
 		case "A" -> System.out.println("Resultado: " + (numero + numero2));
 		case "B" -> System.out.println("Resultado: " + (numero - numero2));
