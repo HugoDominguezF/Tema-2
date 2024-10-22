@@ -23,12 +23,6 @@ public class Ejercicio7 {
 		 * do-while y termina el codigo saliendo del bucle
 		 */
 		do {
-			System.out.println("Elija dos numeros");
-			System.out.println("Numero 1:");
-			numero = sc.nextDouble();
-			System.out.println("Numero 2:");
-			numero2 = sc.nextDouble();
-
 			System.out.println("Elija una opcion:");
 			System.out.println("A) Sumar los numeros");
 			System.out.println("B) Restar los numeros");
@@ -38,6 +32,13 @@ public class Ejercicio7 {
 			letra = sc.next().toUpperCase();
 
 			if (!letra.equalsIgnoreCase("e")) {
+				
+				System.out.println("Elija dos numeros");
+				System.out.println("Numero 1:");
+				numero = sc.nextDouble();
+				System.out.println("Numero 2:");
+				numero2 = sc.nextDouble();
+				
 				switch (letra) {
 
 				case "A" -> System.out.println("Resultado: " + (numero + numero2));
