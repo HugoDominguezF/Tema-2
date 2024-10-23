@@ -21,6 +21,7 @@ public class Ejercicio1 {
 			System.out.print(incremento + " ");
 		}
 
+		sc.close();
 	}
 
 }
