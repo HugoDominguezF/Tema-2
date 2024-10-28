@@ -36,6 +36,7 @@ public class Ejercicio9 {
 			System.out.println("Gana jugador 2");
 		}
 
+		sc.close();
 	}
 
 }

@@ -25,6 +25,7 @@ public class Ejercicio8 {
 		} else
 			System.out.println("El numero no esta entre el 0 y 10");
 
+		sc.close();
 	}
 
 }
