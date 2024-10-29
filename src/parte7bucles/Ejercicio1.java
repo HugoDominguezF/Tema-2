@@ -6,6 +6,7 @@ public class Ejercicio1 {
 
 	public static void main(String[] args) {
 		
+		//declaro las variables que mediran el tiempo, y sus contrapartes que seran las variables modificadas
 		int horas;
 		int mins;
 		int secs;
@@ -14,8 +15,10 @@ public class Ejercicio1 {
 		int minsFinales;
 		int secsFinales;
 		
+		//creamos un scanner para leer lo que nos diga el usuario
 		Scanner sc = new Scanner(System.in);
 		
+		//
 		System.out.println("Dime el tiempo en HORAS");
 		horas = sc.nextInt();
 		System.out.println("Dime el tiempo en MINUTOS");

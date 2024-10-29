@@ -18,7 +18,7 @@ public class Ejercicio10 {
 		System.out.println("Dime un numero y comprobare si es capicua");
 		numero = sc.nextInt();
 
-		numFinal=numero;
+		numFinal = numero;
 		if (numFinal >= 0) {
 			while (numFinal > 0) {
 
@@ -26,7 +26,7 @@ public class Ejercicio10 {
 				invertido = invertido * 10 + resto;
 				numFinal /= 10;
 			}
-			
+
 			if (invertido == numero) {
 				System.out.println("El numero es capicua");
 			} else {
