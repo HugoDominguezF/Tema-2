@@ -16,21 +16,27 @@ public class Ejercicio3 {
 		
 		tamañoMod=tamaño;
 		
-		//este contador servira para contar las lineas que ejecuta
 		for(int contador=1;contador<=tamaño;contador++) {
 			
 			if(contador==1) {
+				System.out.print(" ");
 				for(int linea=0;linea<tamaño;linea++)
 					System.out.print("* ");
 			}else if(contador==tamaño) {
-				for(int espacios=contador;espacios>0;espacios--) {
-					System.out.print("  ");
+				for(int espacios=contador;espacios>1;espacios--) {
+					System.out.print(" ");
 				}
-				System.out.println("* ");
+				System.out.print(" * ");
 			}else {
-				for(int espacios=contador;espacios>0;espacios--) {
-					System.out.print("  ");
+				for(int espacios=contador;espacios>1;espacios--) {
+					System.out.print(" ");
 				}
+				
+				System.out.print(" *");
+				for(int espacios=contador;espacios<tamaño;espacios++) {
+						System.out.print("  ");
+				}
+				System.out.print("*");
 				
 			}
 			
